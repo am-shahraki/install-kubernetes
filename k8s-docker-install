@@ -1,0 +1,33 @@
+Install docker version 1.12
+https://apt.dockerproject.org/repo/pool/main/d/docker-engine/
+Run 
+sudo usermod -a -G docker $USER for daemon error
+Install snap
+$ sudo apt update
+$ sudo apt install snapd
+sudo snap install kubectl --classic
+apt-get update && apt-get upgrade
+apt-get update && apt-get install -y apt-transport-https
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+Apt+get update
+apt-get install -y kubelet kubeadm
+Setenforce 0
+دستورات راه اندازی 
+mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  Kubectl get names
+دستور جوین
+ kubeadm join --token 3850eb.f3733a74736b13dd 158.39.163.9:6443
+  kubeadm join --token 78d1d2.3595f6b49322dba8 158.39.163.9:6443
+kubectl create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml
+Start using cluster
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+Cloud 6 :Master
+ kubeadm join --token a2a1a0.a0d1693b79c785cc 158.39.163.9:443
+ 
+kubeadm join --token fa4a34.1fa08542129823b3 158.39.163.9:6443
