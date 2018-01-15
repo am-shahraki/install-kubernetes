@@ -27,7 +27,8 @@ Start using cluster
 sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
-Cloud 6 :Master
- kubeadm join --token a2a1a0.a0d1693b79c785cc 158.39.163.9:443
- 
-kubeadm join --token fa4a34.1fa08542129823b3 158.39.163.9:6443
+
+
+kubeadm join --token bb022c.94f219b779d8249c 158.39.163.5:6443 --discovery-token-ca-cert-hash sha256:fa7a42905656f7f5b3b2bdc18977faf8e7cf7e668e3d9e523fd59f63171401a3
+
+
