@@ -28,5 +28,4 @@ sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
 
- kubeadm join --token 1c23bd.8ec9761a9ec8ab06 158.39.163.5:6443 --discovery-token-ca-cert-hash sha256:6a2587aa3fcca68cf540f2ebe5778e2a04b90d794ee05eef2baab9dcbc264954
-
+ kubeadm join --token dba88f.f86cdfd96bf4d044 158.39.163.5:6443 --discovery-token-ca-cert-hash sha256:f48c65bca1c203159669701dd18fd4e4db25c195c3be6ee3b04e49ed22f5f1cf
