@@ -29,4 +29,4 @@ sudo chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
 
 
-kubeadm join --token 7003fb.4dd968db286deb0a 158.39.163.5:6443 --discovery-token-ca-cert-hash sha256:4564fd935c37c52e16aa2e451d5e68b0f4b01365387422ba80c6dce00c7f0b62
+kubeadm join --token ce4c54.4075b9d637971e7b 158.39.163.5:6443 --discovery-token-ca-cert-hash sha256:c5e679cd22ee3fd36dd8a7b1934a82914acc734aee92663c93270ec97a750680
